@@ -6,10 +6,14 @@ import { config } from "./config";
 class Application {
    public initialize(): void {
       mongooseConnect();
-      config.validateConfig();
+      this.loadConfig();
       const app: Express = express();
       const server: ChatChatServer = new ChatChatServer(app);
       server.start();
+   }
+   private loadConfig(): void {
+      config.validateConfig();
+      config.cloudinaryConfig();
    }
 }
 const application: Application = new Application();
