@@ -8,7 +8,7 @@ export function uploads(
    return new Promise((reslove) => {
       cloudinary.v2.uploader.upload(
          file,
-         { public_id, overwrite, invalidate },
+         { public_id, overwrite, invalidate, folder: 'chatchat' },
          (error: UploadApiErrorResponse | undefined, result: UploadApiResponse | undefined) => {
             if (error) reslove(error)
             reslove(result)

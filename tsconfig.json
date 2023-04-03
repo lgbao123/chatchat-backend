@@ -44,6 +44,9 @@
          "@workers/*": [
             "src/shared/workers/*"
          ],
+         "@auth/*": [
+            "src/features/auth/*"
+         ],
          "@root/*": [
             "src/*"
          ],
