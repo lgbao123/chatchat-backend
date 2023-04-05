@@ -49,3 +49,10 @@ export class JoiValidateError extends CustomError {
       super(message)
    }
 }
+export class ServerError extends CustomError {
+   statusCode = StatusCodes.INTERNAL_SERVER_ERROR;
+   status = 'error';
+   constructor(message: string) {
+      super(message)
+   }
+}

@@ -6,7 +6,7 @@ Accept: application/json
 withCredentials: true
 
 {
-   "username":"asdd",
+   "username":"test",
    "password":"12345678",
    "email":"a@gmail.com",
    "avatarColor":"red",
